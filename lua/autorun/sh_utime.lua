@@ -8,19 +8,19 @@ local meta = FindMetaTable( "Player" )
 if not meta then return end
 
 function meta:GetUTime()
-	return self:GetNWInt( "TotalUTime" )
+	return self:GetNWFloat( "TotalUTime" )
 end
 
 function meta:SetUTime( num )
-	self:SetNWInt( "TotalUTime", num )
+	self:GetNWFloat( "TotalUTime", num )
 end
 
 function meta:GetUTimeStart()
-	return self:GetNWInt( "UTimeStart" )
+	return self:GetNWFloat( "UTimeStart" )
 end
 
 function meta:SetUTimeStart( num )
-	self:SetNWInt( "UTimeStart", num )
+	self:GetNWFloat( "UTimeStart", num )
 end
 
 function meta:GetUTimeSessionTime()

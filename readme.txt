@@ -36,6 +36,7 @@ All client config is done in game under "utilities". To disable the welcome mess
 
 v1.43 - *(00/00/00)*
 	* [ADD] Player names are no longer shown when disguiser is enabled in TTT.
+	* [FIX] Changes brought on by Garry-breakage (Thanks, GGG-KILLER).
 
 v1.42 - *(01/27/13)*
 	* [ADD] utime_welcome cvar to disable welcome message.

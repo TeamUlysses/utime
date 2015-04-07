@@ -12,7 +12,7 @@ function meta:GetUTime()
 end
 
 function meta:SetUTime( num )
-	self:GetNWFloat( "TotalUTime", num )
+	self:SetNWFloat( "TotalUTime", num )
 end
 
 function meta:GetUTimeStart()
@@ -20,7 +20,7 @@ function meta:GetUTimeStart()
 end
 
 function meta:SetUTimeStart( num )
-	self:GetNWFloat( "UTimeStart", num )
+	self:SetNWFloat( "UTimeStart", num )
 end
 
 function meta:GetUTimeSessionTime()

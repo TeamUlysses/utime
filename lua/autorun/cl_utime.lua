@@ -307,6 +307,7 @@ end
 concommand.Add( "utime_reset", resetCvars )
 
 function buildCP( cpanel )
+		if not cpanel then return end
 		cpanel:ClearControls()
 		cpanel:AddControl( "Header", { Text = "UTime by Megiddo (Team Ulysses)" } )
 		cpanel:AddControl( "Checkbox", { Label = "Enable", Command = "utime_enable" }  )

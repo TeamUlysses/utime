@@ -139,6 +139,8 @@ function PANEL:Think()
 		self.playerInfo:SetVisible( true )
 	end
 
+	if not IsValid( LocalPlayer() ) then return end
+	
 	local tr = util.GetPlayerTrace( LocalPlayer(), LocalPlayer():GetAimVector() )
 	local trace = util.TraceLine( tr )
 	if trace.Entity and trace.Entity:IsValid() and trace.Entity:IsPlayer() and not trace.Entity:GetNWBool("disguised", false) then -- Last conditional is TTT disguiser

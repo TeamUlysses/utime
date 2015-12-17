@@ -1,0 +1,3 @@
+[submodule ".git_hooks"]
+	path = .git_hooks
+	url = https://github.com/TeamUlysses/git-hooks.git

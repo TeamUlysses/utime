@@ -129,6 +129,21 @@ function PANEL:ApplySchemeSettings()
 end
 
 -----------------------------------------------------------
+--	 Name: ShouldRevealPlayer
+-----------------------------------------------------------
+function PANEL:ShouldRevealPlayer( ply )
+	if ply:GetNWBool("disguised", false) then -- TTT disguiser
+		return false
+	end
+
+	if engine.ActiveGamemode() == "murder" and not LocalPlayer():IsAdmin() then
+		return false
+	end
+
+	return true
+end
+
+-----------------------------------------------------------
 --	 Name: Think
 -----------------------------------------------------------
 local locktime = 0
@@ -140,10 +155,11 @@ function PANEL:Think()
 	end
 
 	if not IsValid( LocalPlayer() ) then return end
-	
+
 	local tr = util.GetPlayerTrace( LocalPlayer(), LocalPlayer():GetAimVector() )
 	local trace = util.TraceLine( tr )
-	if trace.Entity and trace.Entity:IsValid() and trace.Entity:IsPlayer() and not trace.Entity:GetNWBool("disguised", false) then -- Last conditional is TTT disguiser
+	local ply = trace.Entity
+	if ply and ply:IsValid() and ply:IsPlayer() and self:ShouldRevealPlayer(ply) then
 		self.TargetSize = self.Large
 		self.playerInfo:SetPlayer( trace.Entity )
 		locktime = CurTime()

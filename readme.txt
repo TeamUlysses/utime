@@ -36,10 +36,11 @@ All client config is done in game under "utilities". To disable the welcome mess
 
 v1.44 - *(00/00/00)*
 	* [FIX] UTime cpanel attempting to build before tool menu is populated.
+	* [CHANGE] Player names are no longer shown to non-admins in Murder gamemode.
 
 v1.43 - *(05/06/15)*
-	* [ADD] Player names are no longer shown when disguiser is enabled in TTT.
 	* [FIX] Changes brought on by Garry-breakage (Thanks, GGG-KILLER).
+	* [CHANGE] Player names are no longer shown when disguiser is enabled in TTT.
 
 v1.42 - *(01/27/13)*
 	* [ADD] utime_welcome cvar to disable welcome message.

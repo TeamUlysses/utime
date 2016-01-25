@@ -12,7 +12,7 @@ end
 function onJoin( ply )
 	local uid = ply:UniqueID()
 	local row = sql.QueryRow( "SELECT totaltime, lastvisit FROM utime WHERE player = " .. uid .. ";" )
-	local time = 0
+	local time = 0 
 
 	if row then
 		if utime_welcome:GetBool() then

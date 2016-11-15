@@ -65,7 +65,7 @@ function think()
 end
 timer.Create( "UTimeThink", 0.6, 0, think )
 
-local texGradient = surface.GetTextureID( "gui/center_gradient" )
+local texGradient = surface.GetTextureID( "gui/gradient" )
 
 --PANEL.InnerColor = Color( 250, 250, 245, 255 )
 --PANEL.OuterColor = Color( 0, 150, 245, 200 )

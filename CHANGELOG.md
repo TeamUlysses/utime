@@ -1,4 +1,7 @@
 # UTime Changelog
+## v1.45 - *(00/00/00)*
+* [CHANGE] New gradient texture in use (Thanks, GlenAnderson).
+
 ## v1.44 - *(01/25/16)*
 * [FIX] UTime cpanel attempting to build before tool menu is populated.
 * [CHANGE] Player names are no longer shown to non-admins in Murder gamemode.

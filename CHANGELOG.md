@@ -1,5 +1,6 @@
 # UTime Changelog
 ## v1.45 - *(00/00/00)*
+* [ADD] Zombie Survival support (Thanks, iViscosity).
 * [CHANGE] New gradient texture in use (Thanks, GlenAnderson).
 
 ## v1.44 - *(01/25/16)*

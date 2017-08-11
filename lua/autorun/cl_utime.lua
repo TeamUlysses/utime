@@ -139,6 +139,13 @@ function PANEL:ShouldRevealPlayer( ply )
 	if engine.ActiveGamemode() == "murder" and not LocalPlayer():IsAdmin() then
 		return false
 	end
+	
+	if engine.ActiveGamemode() == "zombiesurvival" then
+		local wraith = GAMEMODE.ZombieClasses[ "Wraith" ].Index
+		if ply:Team() == TEAM_UNDEAD and ply:GetZombieClass() == wraith then 
+			return false
+		end
+	end
 
 	return true
 end

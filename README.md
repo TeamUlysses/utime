@@ -12,7 +12,7 @@ Utime is brought to you by..
 * Brett "Megiddo" Smith - Contact: <megiddo@ulyssesmod.net>
 
 ## Requirements
-Utime has no requirements.
+Utime requires [ULib](https://github.com/TeamUlysses/ulib).
 
 ## Installation
 To install Utime, simply extract the files from the downloaded archive to your garrysmod/addons folder.
